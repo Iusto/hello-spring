@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
+    /**회원 리포지토리의 코드가
+    회원 서비스 코드를 DI 가능하게 변경한다.*/
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
